@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # **Algerian Fire Forecaster**
 
 ![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
@@ -138,5 +137,5 @@ Employed the following libraries for comprehensive data analysis:
 ### **Ready to forecast the fire probablity? Click [here](https://realestate-valuation-system-fqcq.onrender.com/) to use our fire predictor**
 ### **Your time and interest in viewing my project are greatly appreciated. Thank you. 😃!**
 =======
-# Algerian-Fire-Forecaster
->>>>>>> 27d84ec47e57f63645ade13fd1c4637c384ea776
+
+Test
