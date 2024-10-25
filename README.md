@@ -136,6 +136,3 @@ Employed the following libraries for comprehensive data analysis:
 
 ### **Ready to forecast the fire probablity? Click [here](https://realestate-valuation-system-fqcq.onrender.com/) to use our fire predictor**
 ### **Your time and interest in viewing my project are greatly appreciated. Thank you. 😃!**
-=======
-
-Test
