@@ -12,7 +12,7 @@ from sklearn.preprocessing import StandardScaler
 
 def load_model():
     with open(
-        r"C:\Users\91948\Documents\VS Code Files\Local_Algerian-Fire-Forecaster-main\model\saved models.pickle",
+        r"C:\Users\91948\Documents\VS Code Files\Local_Algerian-Fire-Forecaster-main\model\artifacts\saved models.pickle",
         "rb",
     ) as f:
         return pickle.load(f)
@@ -34,7 +34,7 @@ def load_model():
 
 def load_prediction_input():
     with open(
-        r"C:\Users\91948\Documents\VS Code Files\Local_Algerian-Fire-Forecaster-main\model\prediction_input.json",
+        r"C:\Users\91948\Documents\VS Code Files\Local_Algerian-Fire-Forecaster-main\model\artifacts\prediction_input.json",
         "rb",
     ) as f:
         return json.load(f)
@@ -65,12 +65,24 @@ def load_predicted_values(scaled_input,model):
 
 saved_model = load_model()
 model = saved_model['model']
-scaler = saved_model['scale']
 prediction_input = load_prediction_input()
 region = prediction_input['region']
 
 image_url = "https://raw.githubusercontent.com/Bharathkumar-Tamilarasu/Algerian-Fire-Forecaster/main/resources/Fire%20Forest%20Forecast%201.jpg"
 
+def danger_predictor(val):
+  if val < 5.2:
+    return 'very low danger'
+  elif val >= 5.2 and val < 11.2:
+    return 'low danger'
+  elif val >= 11.2 and val < 21.3:
+    return 'moderate danger'
+  elif val >= 21.3 and val < 38:
+    return 'high danger'
+  elif val >= 38 and val < 50:
+    return 'very high danger'
+  elif val >= 50:
+    return 'extreme danger'
 
 def show_predict_page():
     
@@ -105,16 +117,18 @@ def show_predict_page():
     elif temp_region == "Sidi-Bel Abbes Region":
         ip_region = 1
  
-    scaled_input = preprocess_input(ip_temperature,ip_rh,ip_ws,ip_rain,ip_ffmc,ip_dmc,ip_isi,ip_region,scaler)
+    # scaled_input = preprocess_input(ip_temperature,ip_rh,ip_ws,ip_rain,ip_ffmc,ip_dmc,ip_isi,ip_region,scaler)
+
+    scaled_input = [[ip_temperature,ip_rh,ip_ws,ip_rain,ip_ffmc,ip_dmc,ip_isi,ip_region]]
 
     ip_ok = st.button(
-        "Estimate",
+        "Forecast",
     )
 
     if ip_ok:
         predicted_value = load_predicted_values(scaled_input,model)
         st.success(
-            f"The property's estimated worth is {int(predicted_value)} lakh rupees."
+            f"FWI is {int(predicted_value)} and the area is in {danger_predictor(predicted_value)} of fire"
         )
     else:
         st.error("Please Enter the input")
