@@ -10,49 +10,49 @@ from sklearn.preprocessing import StandardScaler
 
 # For Local Checks
 
-def load_model():
-    with open(
-        r"C:\Users\91948\Documents\VS Code Files\Local_Algerian-Fire-Forecaster-main\model\artifacts\saved models.pickle",
-        "rb",
-    ) as f:
-        return pickle.load(f)
+# def load_model():
+#     with open(
+#         r"C:\Users\91948\Documents\VS Code Files\Local_Algerian-Fire-Forecaster-main\model\artifacts\saved models.pickle",
+#         "rb",
+#     ) as f:
+#         return pickle.load(f)
 
 # For Deployment
 
-# def load_model():
-#     github_raw_url = "https://github.com/Bharathkumar-Tamilarasu/Algerian-Fire-Forecaster/blob/main/model/forecast%20model.pickle"
+def load_model():
+    github_raw_url = "https://raw.githubusercontent.com/Bharathkumar-Tamilarasu/Algerian-Fire-Forecaster/blob/main/model/artifacts/saved%20models.pickle"
 
-#     response = requests.get(github_raw_url)
+    response = requests.get(github_raw_url)
 
-#     if response.status_code == 200:
-#         return pickle.loads(response.content)
-#     else:
-#         print(f"Failed to fetch the model file. Status code: {response.status_code}")
-#         return None
+    if response.status_code == 200:
+        return pickle.loads(response.content)
+    else:
+        print(f"Failed to fetch the model file. Status code: {response.status_code}")
+        return None
 
 # For Local Checks
 
-def load_prediction_input():
-    with open(
-        r"C:\Users\91948\Documents\VS Code Files\Local_Algerian-Fire-Forecaster-main\model\artifacts\prediction_input.json",
-        "rb",
-    ) as f:
-        return json.load(f)
+# def load_prediction_input():
+#     with open(
+#         r"C:\Users\91948\Documents\VS Code Files\Local_Algerian-Fire-Forecaster-main\model\artifacts\prediction_input.json",
+#         "rb",
+#     ) as f:
+#         return json.load(f)
 
 # For Deployment
 
-# def load_prediction_input():
-#     github_raw_url = "https://raw.githubusercontent.com/Bharathkumar-Tamilarasu/Algerian-Fire-Forecaster/main/model/prediction_input.json"
+def load_prediction_input():
+    github_raw_url = "https://raw.githubusercontent.com/Bharathkumar-Tamilarasu/Algerian-Fire-Forecaster/refs/heads/main/model/artifacts/prediction_input.json"
 
-#     response = requests.get(github_raw_url)
+    response = requests.get(github_raw_url)
 
-#     if response.status_code == 200:
-#         return json.loads(response.content)
-#     else:
-#         print(
-#             f"Failed to fetch the prediction input file. Status code: {response.status_code}"
-#         )
-#         return None
+    if response.status_code == 200:
+        return json.loads(response.content)
+    else:
+        print(
+            f"Failed to fetch the prediction input file. Status code: {response.status_code}"
+        )
+        return None
 
 def preprocess_input(temperature,rh,ws,rain,ffmc,dmc,isi,region,scaler):
     temp_df = [[temperature,rh,ws,rain,ffmc,dmc,isi,region]]
