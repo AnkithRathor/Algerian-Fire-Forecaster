@@ -16,8 +16,8 @@
 
 **Author**: Bharathkumar Tamilarasu <br />
 **Email**: bharathkumar.t.17@gmail.com <br />
-**Website**: https://bharathkumart17.wixsite.com/portfolio <br />
-**LinkedIn**: https://www.linkedin.com/in/bharathkumar-tamilarasu-218429222/  <br />
+**Website**: https://www.datascienceportfol.io/bharathkumar_t <br />
+**LinkedIn**: https://www.linkedin.com/in/bharathkumartamilarasu/  <br />
 
 ##
 ![Fire Forest Forecast.jpg](https://github.com/Bharathkumar-Tamilarasu/Algerian-Fire-Forecaster/blob/main/resources/Fire%20Forest%20Forecast.jpg)
@@ -134,5 +134,5 @@ Employed the following libraries for comprehensive data analysis:
 * By employing temperature, relative humidity (rh), wind speed (ws), rainfall (rain), Fine Fuel Moisture Code (FFMC), Duff Moisture Code (DMC), Initial Spread Index (ISI), fire classes, and regional parameters as input features, our model demonstrated the ability to assess the potential fire danger.
 * This project leverages the power of machine learning to enhance our understanding of fire weather dynamics in Algeria, ultimately contributing to more effective wildfire risk management strategies in the region.
 
-### **Ready to forecast the fire probablity? Click [here](https://realestate-valuation-system-fqcq.onrender.com/) to use our fire predictor**
+### **Ready to forecast the fire probablity? Click [here](https://algerian-fire-forecaster.onrender.com) to use our fire predictor**
 ### **Your time and interest in viewing my project are greatly appreciated. Thank you. 😃!**
