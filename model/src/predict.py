@@ -20,7 +20,7 @@ from sklearn.preprocessing import StandardScaler
 # For Deployment
 
 def load_model():
-    github_raw_url = "https://raw.githubusercontent.com/Bharathkumar-Tamilarasu/Algerian-Fire-Forecaster/blob/main/model/artifacts/saved%20models.pickle"
+    github_raw_url = "https://raw.githubusercontent.com/Bharathkumar-Tamilarasu/Algerian-Fire-Forecaster/main/model/artifacts/saved%20models.pickle"
 
     response = requests.get(github_raw_url)
 
@@ -42,7 +42,7 @@ def load_model():
 # For Deployment
 
 def load_prediction_input():
-    github_raw_url = "https://raw.githubusercontent.com/Bharathkumar-Tamilarasu/Algerian-Fire-Forecaster/refs/heads/main/model/artifacts/prediction_input.json"
+    github_raw_url = "https://raw.githubusercontent.com/Bharathkumar-Tamilarasu/Algerian-Fire-Forecaster/main/model/artifacts/prediction_input.json"
 
     response = requests.get(github_raw_url)
 
