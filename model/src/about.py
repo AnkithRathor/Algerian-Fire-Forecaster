@@ -33,8 +33,8 @@ def show_about_page():
     ## **Data Collection**
 
     * The data for this project was collected from Kaggle, a popular platform for data science competitions and datasets.
-    * Check out the raw dataset [here](https://github.com/Bharathkumar-Tamilarasu/Algerian-Fire-Forecaster/blob/main/data/raw_data/Algerian_forest_fires_dataset_UPDATE.csv)
-    * Check out the cleaned dataset [here](https://github.com/Bharathkumar-Tamilarasu/Algerian-Fire-Forecaster/blob/main/data/cleaned_data/Algerian_forest_fires_dataset_cleaned.csv)
+    * Check out the raw dataset [here](https://github.com/AnkithRathor/Algerian-Fire-Forecaster/blob/main/data/raw_data/Algerian_forest_fires_dataset_UPDATE.csv)
+    * Check out the cleaned dataset [here](https://github.com/AnkithRathor/Algerian-Fire-Forecaster/blob/main/data/cleaned_data/Algerian_forest_fires_dataset_cleaned.csv)
 
     ## **About the Dataset**
 
