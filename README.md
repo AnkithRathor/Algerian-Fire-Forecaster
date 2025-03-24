@@ -14,10 +14,10 @@
 ![Seaborn](https://img.shields.io/badge/Seaborn-7db0bc.svg?style=for-the-badge&logo=pypi&logoColor=white)
 ![Regex](https://img.shields.io/badge/Regex-64029a.svg?style=for-the-badge&logo=python&logoColor=white)
 
-**Author**: Bharathkumar Tamilarasu <br />
-**Email**: bharathkumar.t.17@gmail.com <br />
-**Website**: https://www.datascienceportfol.io/bharathkumar_t <br />
-**LinkedIn**: https://www.linkedin.com/in/bharathkumartamilarasu/  <br />
+**Author**: Ankith Rathor <br />
+**Email**: ankithrathor126@gmail.com <br />
+**Website**: https://www.datascienceportfol.io/ <br />
+**LinkedIn**: (https://www.linkedin.com/in/ankith-rathor-093440241/)  <br />
 
 ##
 ![Fire Forest Forecast.jpg](https://github.com/Bharathkumar-Tamilarasu/Algerian-Fire-Forecaster/blob/main/resources/Fire%20Forest%20Forecast.jpg)
