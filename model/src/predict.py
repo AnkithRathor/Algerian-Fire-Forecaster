@@ -12,7 +12,7 @@ from sklearn.preprocessing import StandardScaler
 
 # def load_model():
 #     with open(
-#         r"C:\Users\91948\Documents\VS Code Files\Local_Algerian-Fire-Forecaster-main\model\artifacts\saved models.pickle",
+#         r"F:\Ankith\Project\Python Projects\Algerian Fire Forecaster\Model\Artifact\saved models.pickle",
 #         "rb",
 #     ) as f:
 #         return pickle.load(f)
@@ -20,7 +20,7 @@ from sklearn.preprocessing import StandardScaler
 # For Deployment
 
 def load_model():
-    github_raw_url = "https://raw.githubusercontent.com/Bharathkumar-Tamilarasu/Algerian-Fire-Forecaster/main/model/artifacts/saved%20models.pickle"
+    github_raw_url = "https://github.com/AnkithRathor/Algerian-Fire-Forecaster/blob/main/model/artifacts/saved%20models.pickle"
 
     response = requests.get(github_raw_url)
 
@@ -34,7 +34,7 @@ def load_model():
 
 # def load_prediction_input():
 #     with open(
-#         r"C:\Users\91948\Documents\VS Code Files\Local_Algerian-Fire-Forecaster-main\model\artifacts\prediction_input.json",
+#         r"F:\Ankith\Project\Python Projects\Algerian Fire Forecaster\Model\Artifact\prediction_input.json",
 #         "rb",
 #     ) as f:
 #         return json.load(f)
@@ -42,7 +42,7 @@ def load_model():
 # For Deployment
 
 def load_prediction_input():
-    github_raw_url = "https://raw.githubusercontent.com/Bharathkumar-Tamilarasu/Algerian-Fire-Forecaster/main/model/artifacts/prediction_input.json"
+    github_raw_url = "https://github.com/AnkithRathor/Algerian-Fire-Forecaster/blob/main/model/artifacts/prediction_input.json"
 
     response = requests.get(github_raw_url)
 
@@ -68,7 +68,7 @@ model = saved_model['model']
 prediction_input = load_prediction_input()
 region = prediction_input['region']
 
-image_url = "https://raw.githubusercontent.com/Bharathkumar-Tamilarasu/Algerian-Fire-Forecaster/main/resources/Fire%20Forest%20Forecast%201.jpg"
+image_url = "https://github.com/AnkithRathor/Algerian-Fire-Forecaster/blob/main/resources/Fire%20Forest%20Forecast.jpg"
 
 def danger_predictor(val):
   if val < 5.2:
