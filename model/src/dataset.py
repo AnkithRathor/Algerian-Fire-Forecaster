@@ -3,7 +3,7 @@ import pandas as pd
 
 def show_dataset_page():
     df = pd.read_csv(
-        "https://raw.githubusercontent.com/Bharathkumar-Tamilarasu/Algerian-Fire-Forecaster/refs/heads/main/data/cleaned_data/Algerian_forest_fires_dataset_cleaned.csv"
+        "https://github.com/AnkithRathor/Algerian-Fire-Forecaster/blob/main/data/cleaned_data/Algerian_forest_fires_dataset_cleaned.csv"
     )
 
     rows = int(df.shape[0])
@@ -23,6 +23,6 @@ def show_dataset_page():
 
     st.download_button(
         label="Download Full Dataset",
-        data="https://raw.githubusercontent.com/Bharathkumar-Tamilarasu/Algerian-Fire-Forecaster/refs/heads/main/data/cleaned_data/Algerian_forest_fires_dataset_cleaned.csv",
+        data="https://github.com/AnkithRathor/Algerian-Fire-Forecaster/blob/main/data/cleaned_data/Algerian_forest_fires_dataset_cleaned.csv",
         file_name="Forest Fire Data_Cleaned.csv",
     )
